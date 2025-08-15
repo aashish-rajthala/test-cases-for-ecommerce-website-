@@ -1,9 +1,24 @@
-QA Test Cases Repository
-Overview
+Ah, I see! You want the README to be **clean, readable, and not congested**. Let me rewrite it in a **more organized, spaced-out format** with clear headings, bullet points, and minimal text per line.
 
-This repository contains UI and Functional Test Cases for the project, along with associated bug reports. It is intended for QA tracking, bug reporting, and reference for test execution.
+---
 
-Repository Structure
+# QA Test Cases Repository
+
+## Overview
+
+This repository contains:
+
+* **UI Test Cases** – to verify visual elements.
+* **Functional Test Cases** – to verify feature behavior.
+* **Bug Reports** – to track failed test cases.
+
+It is intended for QA tracking, bug reporting, and reference for test execution.
+
+---
+
+## Repository Structure
+
+```
 /QA-Test-Cases
 │
 ├── Functional-Test-Cases
@@ -20,58 +35,73 @@ Repository Structure
 │   └── Navigation_Bugs.xlsx
 │
 └── README.md
+```
 
-Test Case Types
-1. UI Test Cases
+---
 
-Purpose: Verify the visual elements of the application.
+## Test Case Types
 
-Examples:
+### 1. UI Test Cases
 
-Logo visibility on the homepage.
+**Purpose:** Verify the visual appearance of elements.
 
-Image load in header and body sections.
+**Examples:**
 
-Spelling mistakes and alignment issues.
+* Logo visibility
+* Image load on homepage
+* Spelling mistakes
+* Alignment and layout issues
 
-Columns in Excel:
+**Columns:**
+`Test Case ID | Test Scenario | Steps to Execute | Expected Result | Actual Result | Status | Comments | Screenshot`
 
-Test Case ID, Test Scenario, Steps to Execute, Expected Result, Actual Result, Status, Comments, Screenshot
+---
 
-2. Functional Test Cases
+### 2. Functional Test Cases
 
-Purpose: Verify application functionality works according to requirements.
+**Purpose:** Verify application functionality according to requirements.
 
-Modules Covered:
+**Modules Covered:**
 
-Login
+* Login
+* Navigation
+* Search (to be added)
+* Registration (to be added)
 
-Navigation
+**Columns:**
+`Test Case ID | Test Scenario | Steps to Execute | Input Data | Expected Result | Actual Result | Status | Comments | Screenshot`
 
-Search (to be added)
+---
 
-Registration (to be added)
+## Bug Reports
 
-Columns in Excel:
+**Purpose:** Document failed test cases with steps, expected vs actual results, and severity.
 
-Test Case ID, Test Scenario, Steps to Execute, Input Data, Expected Result, Actual Result, Status, Comments, Screenshot
+**Columns:**
+`Bug ID | Related Test Case ID | Title | Description | Steps to Reproduce | Expected Result | Actual Result | Screenshot | Severity | Status`
 
-Bug Reports
+**Severity Levels:**
 
-Purpose: Document all failed test cases with clear steps, expected vs actual results, and severity.
+* Low – Minor issue
+* Medium – Some functionality affected
+* High – Critical functionality broken
 
-Bug Report Columns:
+**Status Options:**
 
-Bug ID, Related Test Case ID, Title, Description, Steps to Reproduce, Expected Result, Actual Result, Screenshot, Severity, Status
+* Open, In Progress, Resolved, Closed
 
-Severity Levels:
+---
 
-Low – Minor issue not affecting functionality
+## QA Execution Guidelines
 
-Medium – Issue affects some functionality or minor usability
+1. Execute tests **module by module**.
+2. Update **Actual Result** and **Status** after execution.
+3. Attach **screenshots for failed test cases**; optional for critical passed tests.
+4. Log **all failed tests** in the Bug Report sheets.
+5. After bug fixes, **retest failed cases** and update status.
 
-High – Critical functionality broken
+---
 
-Status Options:
 
-Open, In Progress, Resolved, Closed
+
+
